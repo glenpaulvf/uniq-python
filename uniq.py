@@ -27,3 +27,6 @@ def uniq(text=""):
     return uniqDict
 
 
+# Task 4
+tmaas = open('agatha christie-tmaas.txt', 'r')
+
