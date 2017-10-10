@@ -12,4 +12,18 @@ loremIpsumDict = {w: loremIpsumList.count(w) for w in loremIpsumList}
 # Task 2
 loremIpsumUniqCount = len(loremIpsumDict)
 
+# Task 3
+def uniq(text=""):
+    if not text: # if empty string
+        return None
+
+    uniqDict = {}
+
+    for word in text:
+        if word not in uniqDict:
+            uniqDict[word] = 1
+        else: # word is in uniqDict
+            uniqDict[word] = uniqDict.get(word) + 1
+    return uniqDict
+
 
