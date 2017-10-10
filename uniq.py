@@ -9,4 +9,7 @@ loremIpsumList = loremIpsumText.split()
 # Task 1
 loremIpsumDict = {w: loremIpsumList.count(w) for w in loremIpsumList}
 
+# Task 2
+loremIpsumUniqCount = len(loremIpsumDict)
+
 
